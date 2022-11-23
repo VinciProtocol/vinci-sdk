@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/VinciProtocol/vinci-sdk/issues"
   },
-  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/api#readme"
+  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/api#readme",
+  "scripts": {
+    "codegen": "yarn codegen:openAPI",
+    "codegen:openAPI": "openapi --input https://api.vinci.io/api/openapi.json --output ./src --client axios"
+  },
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.23.0"
+  },
+  "dependencies": {
+    "axios": "^1.2.0",
+    "form-data": "4"
+  }
 }
