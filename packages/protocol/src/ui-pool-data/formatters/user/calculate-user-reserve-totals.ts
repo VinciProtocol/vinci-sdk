@@ -1,5 +1,5 @@
 import type BigNumber from 'bignumber.js'
-import { valueToBigNumber, valueToZDBigNumber } from 'utils/math'
+import { valueToBigNumber, valueToZDBigNumber } from '@vinci-protocol/math'
 import type { UserReserveSummaryResponse } from './generate-user-reserve-summary'
 
 interface UserReserveTotalsRequest {

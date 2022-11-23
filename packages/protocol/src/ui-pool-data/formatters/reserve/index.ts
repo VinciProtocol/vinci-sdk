@@ -1,8 +1,8 @@
 import type BigNumber from 'bignumber.js'
-import type { BigNumberValue } from 'utils/math/types'
-import { normalize, valueToBigNumber, valueToZDBigNumber } from 'utils/math'
-import { LTV_PRECISION, RAY_DECIMALS, SECONDS_PER_YEAR } from 'app/App/constants'
-import { RAY, rayPow } from 'utils/math/ray'
+import type { BigNumberValue } from '@vinci-protocol/math'
+import { normalize, valueToBigNumber, valueToZDBigNumber } from '@vinci-protocol/math'
+import { LTV_PRECISION, RAY_DECIMALS, SECONDS_PER_YEAR } from '@vinci-protocol/math'
+import { RAY, rayPow } from '@vinci-protocol/math'
 import { nativeToUSD } from '../usd/native-to-usd'
 import { calculateReserveDebt } from './calculate-reserve-debt'
 

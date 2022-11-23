@@ -1,11 +1,11 @@
 import type BigNumber from 'bignumber.js'
-import type { BigNumberValue } from 'utils/math/types'
+import type { BigNumberValue } from '@vinci-protocol/math'
 import {
   getLinearBalance,
   getMarketReferenceCurrencyAndUsdBalance,
   getCompoundedBalance,
   getCompoundedStableBalance,
-} from 'lib/protocol/ui-pool-data/pool-math'
+} from '../../pool-math'
 import { calculateSupplies } from './calculate-supplies'
 import type { RawUserReserveData } from './index'
 

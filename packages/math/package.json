@@ -1,13 +1,13 @@
 {
-  "name": "@vinci-protocol/protocol",
+  "name": "@vinci-protocol/math",
   "version": "0.0.1",
-  "description": "@vinci-protocol/protocol",
+  "description": "@vinci-protocol/math",
   "main": "index.js",
   "files": [
     "index.js",
     "dist"
   ],
-  "types": "dist/protocol.d.ts",
+  "types": "dist/math.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VinciProtocol/vinci-sdk.git"
@@ -20,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/VinciProtocol/vinci-sdk/issues"
   },
-  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/protocol#readme",
+  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/math#readme",
   "dependencies": {
-    "@vinci-protocol/math": "^0.0.1"
+    "bignumber.js": "^9.1.0",
+    "ethers": "^5.7.2"
   }
 }

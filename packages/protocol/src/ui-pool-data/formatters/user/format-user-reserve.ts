@@ -1,7 +1,7 @@
-import { normalize, valueToBigNumber, valueToZDBigNumber } from 'utils/math'
-import type { BigNumberValue } from 'utils/math/types'
-import { LTV_PRECISION, RAY_DECIMALS, SECONDS_PER_YEAR } from 'app/App/constants'
-import { RAY, rayPow } from 'utils/math/ray'
+import { normalize, valueToBigNumber, valueToZDBigNumber } from '@vinci-protocol/math'
+import type { BigNumberValue } from '@vinci-protocol/math'
+import { LTV_PRECISION, RAY_DECIMALS, SECONDS_PER_YEAR } from '@vinci-protocol/math'
+import { RAY, rayPow } from '@vinci-protocol/math'
 import type { UserReserveSummaryResponse } from './generate-user-reserve-summary'
 import type { ComputedUserReserve } from './index'
 

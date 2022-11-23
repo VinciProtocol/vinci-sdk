@@ -1,10 +1,7 @@
 import type BigNumber from 'bignumber.js'
-import { valueToBigNumber } from 'utils/math'
-import type { BigNumberValue } from 'utils/math/types'
-import {
-  calculateAvailableBorrowsMarketReferenceCurrency,
-  calculateHealthFactorFromBalances,
-} from 'lib/protocol/ui-pool-data/pool-math'
+import { valueToBigNumber } from '@vinci-protocol/math'
+import type { BigNumberValue } from '@vinci-protocol/math'
+import { calculateAvailableBorrowsMarketReferenceCurrency, calculateHealthFactorFromBalances } from '../../pool-math'
 import { calculateUserReserveTotals } from './calculate-user-reserve-totals'
 import type { UserReserveSummaryResponse } from './generate-user-reserve-summary'
 

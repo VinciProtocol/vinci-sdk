@@ -1,8 +1,8 @@
 import BigNumber from 'bignumber.js'
-import type { BigNumberValue } from 'utils/math/types'
-import { valueToBigNumber, valueToZDBigNumber } from 'utils/math'
-import { SECONDS_PER_YEAR, LTV_PRECISION } from 'app/App/constants'
-import * as RayMath from 'utils/math/ray'
+import type { BigNumberValue } from '@vinci-protocol/math'
+import { valueToBigNumber, valueToZDBigNumber } from '@vinci-protocol/math'
+import { SECONDS_PER_YEAR, LTV_PRECISION } from '@vinci-protocol/math'
+import * as RayMath from '@vinci-protocol/math'
 
 interface CalculateCompoundedInterestRequest {
   rate: BigNumberValue

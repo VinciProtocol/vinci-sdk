@@ -1,5 +1,5 @@
-import { normalize, normalizeBN, valueToBigNumber } from 'utils/math'
-import { SECONDS_PER_YEAR, WEI_DECIMALS } from 'app/App/constants'
+import { normalize, normalizeBN, valueToBigNumber } from '@vinci-protocol/math'
+import { SECONDS_PER_YEAR, WEI_DECIMALS } from '@vinci-protocol/math'
 
 export interface CalculateIncentiveAPRRequest {
   emissionPerSecond: string

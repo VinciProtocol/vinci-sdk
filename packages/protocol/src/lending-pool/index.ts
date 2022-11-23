@@ -25,8 +25,8 @@ import type {
 } from './lendingPoolTypes'
 import type { ILendingPool } from './typechain/ILendingPool'
 import { ILendingPool__factory } from './typechain/ILendingPool__factory'
-import type { IERC721ServiceInterface } from 'lib/protocol/erc721-contract'
-import { ERC721Service } from 'lib/protocol/erc721-contract'
+import type { IERC721ServiceInterface } from '../erc721-contract'
+import { ERC721Service } from '../erc721-contract'
 import type { IERC1155ServiceInterface } from '../erc1155-contract'
 import { ERC1155Service } from '../erc1155-contract'
 

@@ -2,7 +2,7 @@
 
 import type { ethers, EventFilter, Signer, BigNumber, BigNumberish, PopulatedTransaction } from 'ethers'
 import type { ContractTransaction, Overrides, CallOverrides } from '@ethersproject/contracts'
-import { Contract } from '@ethersproject/contracts'
+import type { Contract } from '@ethersproject/contracts'
 import type { BytesLike } from '@ethersproject/bytes'
 import type { Listener, Provider } from '@ethersproject/providers'
 import type { FunctionFragment, Result } from '@ethersproject/abi'
@@ -31,7 +31,7 @@ interface IERC20DetailedInterface extends ethers.utils.Interface {
   events: {}
 }
 
-export class IERC20Detailed extends Contract {
+export interface IERC20Detailed extends Contract {
   connect(signerOrProvider: Signer | Provider | string): this
   attach(addressOrName: string): this
   deployed(): Promise<this>

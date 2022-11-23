@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js'
-import type { BigNumberValue } from 'utils/math/types'
-import { valueToBigNumber } from 'utils/math'
-import { USD_DECIMALS } from 'app/App/constants'
+import type { BigNumberValue } from '@vinci-protocol/math'
+import { valueToBigNumber } from '@vinci-protocol/math'
+import { USD_DECIMALS } from '@vinci-protocol/math'
 
 interface NativeToUSD {
   amount: BigNumber

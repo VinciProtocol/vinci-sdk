@@ -37,7 +37,7 @@ yarn-error.log*
 *.tsbuildinfo
 
 # protocol
-lib/protocol/src
+../src
 
 # i18n
 googleApplicationCredentials.json

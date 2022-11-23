@@ -1,4 +1,5 @@
 import type { FormatReserveResponse } from '../formatters/reserve'
+import type { BigNumber } from 'bignumber.js'
 
 export interface ComputedReserveData extends FormatReserveResponse {
   id: string

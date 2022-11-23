@@ -1,6 +1,6 @@
 import type BigNumber from 'bignumber.js'
 import { calculateCompoundedInterest } from '../compounded-interest/calculate-compounded-interest'
-import { rayMul } from 'utils/math/ray'
+import { rayMul } from '@vinci-protocol/math'
 
 export interface SuppliesRequest {
   reserve: ReserveSupplyData

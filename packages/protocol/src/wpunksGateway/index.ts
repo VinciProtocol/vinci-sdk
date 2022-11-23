@@ -1,4 +1,4 @@
-import type { IERC721ServiceInterface } from 'lib/protocol/erc721-contract'
+import type { IERC721ServiceInterface } from '../erc721-contract'
 
 import BaseService from '../commons/BaseService'
 import type { EthereumTransactionTypeExtended, transactionType } from '../commons/types'

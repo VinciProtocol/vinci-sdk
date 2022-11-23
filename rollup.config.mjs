@@ -96,26 +96,15 @@ function createConfig(format, output, plugins = []) {
 
   const entryFile = `src/index.ts`
 
-  let external = []
   const treeShakenDeps = ['source-map', '@babel/parser', 'estree-walker']
 
-  if (isGlobalBuild || isBrowserESMBuild || isCompatPackage) {
-    if (!packageOptions.enableNonBrowserBranches) {
-      // normal browser builds - non-browser only imports are tree-shaken,
-      // they are only listed here to suppress warnings.
-      external = treeShakenDeps
-    }
-  } else {
-    // Node / esm-bundler builds.
-    // externalize all direct deps unless it's the compat build.
-    external = [
-      ...Object.keys(pkg.dependencies || {}),
-      ...Object.keys(pkg.peerDependencies || {}),
-      ...['path', 'url', 'stream'],
-      // somehow these throw warnings for runtime-* package builds
-      ...treeShakenDeps,
-    ]
-  }
+  const external = [
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {}),
+    ...['path', 'url', 'stream'],
+    // somehow these throw warnings for runtime-* package builds
+    ...treeShakenDeps,
+  ]
 
   return {
     input: resolve(entryFile),

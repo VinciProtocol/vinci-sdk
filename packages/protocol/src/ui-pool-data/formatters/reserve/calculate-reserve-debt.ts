@@ -1,6 +1,6 @@
 import type BigNumber from 'bignumber.js'
-import { valueToBigNumber } from 'utils/math'
-import { rayMul } from 'utils/math/ray'
+import { valueToBigNumber } from '@vinci-protocol/math'
+import { rayMul } from '@vinci-protocol/math'
 import { calculateCompoundedInterest } from '../compounded-interest/calculate-compounded-interest'
 
 export interface CalculateReserveDebtRequest {
