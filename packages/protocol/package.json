@@ -1,0 +1,24 @@
+{
+  "name": "@vinci-protocol/protocol",
+  "version": "0.0.1",
+  "description": "@vinci-protocol/protocol",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "types": "dist/protocol.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinciProtocol/vinci-sdk.git"
+  },
+  "keywords": [
+    "vinci-protocol"
+  ],
+  "author": "VinciProtocol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VinciProtocol/vinci-sdk/issues"
+  },
+  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/protocol#readme"
+}
