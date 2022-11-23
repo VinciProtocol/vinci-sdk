@@ -74,7 +74,7 @@ async function build(target) {
 
     const extractorConfigPath = path.resolve(pkgDir, `api-extractor.json`)
     const extractorConfig = ExtractorConfig.loadFileAndPrepare(extractorConfigPath)
-    const result = Extractor.invoke(extractorConfig, {
+    const extractorResult = Extractor.invoke(extractorConfig, {
       localBuild: true,
       showVerboseMessages: true,
     })
