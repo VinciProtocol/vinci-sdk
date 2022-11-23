@@ -1,1 +1,6 @@
-export const hello = 'world'
+export { ERC20Service } from './erc20-contract'
+export { ERC721Service } from './erc721-contract'
+export { LendingPoolContract } from './lending-pool'
+export { UiPoolDataContract } from './ui-pool-data'
+export { WalletBalanceContract } from './wallet-balance'
+export { VinciNFTContract } from './vinci-claimable-nft'

@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/VinciProtocol/vinci-sdk/issues"
   },
-  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/protocol#readme"
+  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/protocol#readme",
+  "dependencies": {
+    "bignumber.js": "^9.1.0",
+    "ethers": "^5.7.2"
+  }
 }
