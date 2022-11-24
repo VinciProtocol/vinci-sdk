@@ -13,10 +13,12 @@ export const useAppDispatch = () => useDispatch<AppDispatch>()
 
 export const useAppSelector: TypedUseSelectorHook<AppState> = useSelector
 
-import isApproved from './contract/erc20/isApproved'
-import reservesDataFromAllPools from './contract/uiPool/reservesDataFromAllPools'
-import userReservesDataFromAllPools from './contract/uiPool/userReservesDataFromAllPools'
+import * as isApproved from './contract/erc20/isApproved'
+import * as reservesDataFromAllPools from './contract/uiPool/reservesDataFromAllPools'
+import * as userReservesDataFromAllPools from './contract/uiPool/userReservesDataFromAllPools'
 
 export const vinciSDKReducers = {
   contract: { erc20: { isApproved }, uiPool: { reservesDataFromAllPools, userReservesDataFromAllPools } },
 }
+
+export * from './hooks'
