@@ -5,6 +5,9 @@ import path from 'path'
 import ts from 'rollup-plugin-typescript2'
 import replace from '@rollup/plugin-replace'
 import json from '@rollup/plugin-json'
+import commonjs from '@rollup/plugin-commonjs'
+import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
+import jsx from 'acorn-jsx'
 import chalk from 'chalk'
 
 if (!process.env.TARGET) {
@@ -59,7 +62,6 @@ function createConfig(format, output, plugins = []) {
 
   const isProductionBuild = process.env.__DEV__ === 'false' || /\.prod\.js$/.test(output.file)
   const isBundlerESMBuild = /esm-bundler/.test(format)
-  const isBrowserESMBuild = /esm-browser/.test(format)
   const isServerRenderer = name === 'server-renderer'
   const isNodeBuild = format === 'cjs'
   const isGlobalBuild = /global/.test(format)
@@ -72,6 +74,13 @@ function createConfig(format, output, plugins = []) {
   if (isGlobalBuild) {
     output.name = packageOptions.name
   }
+
+  if (!output.plugins) output.plugins = []
+  output.plugins.push(
+    getBabelOutputPlugin({
+      presets: ['@babel/preset-env'],
+    })
+  )
 
   const shouldEmitDeclarations = pkg.types && process.env.TYPES != null && !hasTSChecked
 
@@ -108,14 +117,19 @@ function createConfig(format, output, plugins = []) {
 
   return {
     input: resolve(entryFile),
-    // Global and Browser ESM builds inlines everything so that they can be
-    // used alone.
+    acornInjectPlugins: [jsx()],
     external,
     plugins: [
       json({
         namedExports: false,
       }),
+      commonjs(),
       tsPlugin,
+      babel({
+        presets: ['@babel/preset-react'],
+        babelHelpers: 'bundled',
+        extensions: ['.tsx'],
+      }),
       createReplacePlugin(isProductionBuild, isBundlerESMBuild),
       ...plugins,
     ],

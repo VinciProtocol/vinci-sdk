@@ -28,6 +28,8 @@
     "react-redux": "^8.0.5"
   },
   "devDependencies": {
+    "@vinci-protocol/protocol": "^0.0.1",
+    "@vinci-protocol/math": "^0.0.1",
     "@types/lodash": "^4.14.190",
     "@types/react": "^18.0.25"
   }
