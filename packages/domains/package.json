@@ -1,0 +1,34 @@
+{
+  "name": "@vinci-protocol/domains",
+  "version": "0.0.1",
+  "description": "@vinci-protocol/domains",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "types": "dist/domains.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinciProtocol/vinci-sdk.git"
+  },
+  "keywords": [
+    "vinci-protocol"
+  ],
+  "author": "VinciProtocol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VinciProtocol/vinci-sdk/issues"
+  },
+  "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/domains#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-redux": "^8.0.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.190",
+    "@types/react": "^18.0.25"
+  }
+}

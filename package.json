@@ -29,6 +29,7 @@
     "enquirer": "^2.3.4",
     "esbuild": "^0.15.13",
     "eslint": "^7.7.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "execa": "^4.0.2",
     "minimist": "^1.2.2",
     "prettier": "^2.7.1",

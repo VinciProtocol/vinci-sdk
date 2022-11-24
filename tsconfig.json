@@ -19,7 +19,10 @@
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "types": ["node"],
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@vinci-protocol/*": ["packages/*/src"]
+    }
   },
   "include": ["packages/global.d.ts", "packages/*/src"]
 }
