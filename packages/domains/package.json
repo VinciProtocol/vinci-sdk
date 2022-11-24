@@ -22,14 +22,16 @@
   },
   "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/domains#readme",
   "dependencies": {
+    "@vinci-protocol/protocol": "^0.0.1",
+    "@vinci-protocol/math": "^0.0.1"
+  },
+  "peerDependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-redux": "^8.0.5"
   },
   "devDependencies": {
-    "@vinci-protocol/protocol": "^0.0.1",
-    "@vinci-protocol/math": "^0.0.1",
     "@types/lodash": "^4.14.190",
     "@types/react": "^18.0.25"
   }

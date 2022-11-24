@@ -126,7 +126,7 @@ function createConfig(format, output, plugins = []) {
       commonjs(),
       tsPlugin,
       babel({
-        presets: ['@babel/preset-react'],
+        presets: [['@babel/preset-react', { runtime: 'automatic' }]],
         babelHelpers: 'bundled',
         extensions: ['.tsx'],
       }),
