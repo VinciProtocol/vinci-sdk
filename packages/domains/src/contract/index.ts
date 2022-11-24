@@ -43,6 +43,6 @@ const useContractService = ({ provider, market }: ContractServiceProps) => {
   return contracts
 }
 const { Provider: ContractProvider, createUseContext } = createContext(useContractService)
-export const useContract = createUseContext()
+export const createContractContext = createUseContext
 
 export default ContractProvider
