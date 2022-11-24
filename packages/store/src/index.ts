@@ -1,27 +1,13 @@
 import type { ThunkAction, Action } from '@reduxjs/toolkit'
-import { configureStore } from '@reduxjs/toolkit'
 import type { TypedUseSelectorHook } from 'react-redux'
 import { useDispatch, useSelector } from 'react-redux'
 
+import type { AppDispatch, AppState } from './store'
 import contract from './contract'
 
-const reducer = { contract }
-
-export function makeStore() {
-  return configureStore({
-    reducer,
-  })
-}
-
-const store = makeStore()
-
-export type AppState = ReturnType<typeof store.getState>
-
-export type AppDispatch = typeof store.dispatch
+export const vinciSDKReducer = { contract }
 
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppState, unknown, Action<string>>
-
-export const vinciSDKReducer = reducer
 
 export const useAppDispatch = () => useDispatch<AppDispatch>()
 

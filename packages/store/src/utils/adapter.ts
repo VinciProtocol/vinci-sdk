@@ -1,11 +1,11 @@
-export const getString = <T, K extends keyof T>(obj: T, keys: K[]) => {
+export const getString = <T, K extends keyof T>(obj: T, keys: K[]): Record<K, string> => {
   return keys.reduce((o, k) => {
     o[k] = obj[k].toString()
     return o
   }, {} as Record<K, string>)
 }
 
-export const getAddress = <T, K extends keyof T>(obj: T, keys: K[]) => {
+export const getAddress = <T, K extends keyof T>(obj: T, keys: K[]): Record<K, string> => {
   return keys.reduce((o, k) => {
     o[k] = (obj[k] as any).toLowerCase()
     return o
