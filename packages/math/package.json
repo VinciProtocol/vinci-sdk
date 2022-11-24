@@ -1,6 +1,6 @@
 {
   "name": "@vinci-protocol/math",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "@vinci-protocol/math",
   "main": "index.js",
   "files": [
