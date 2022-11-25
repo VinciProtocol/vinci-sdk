@@ -1,4 +1,6 @@
-# vinci SDK
+# Vinci SDK
+
+Vinci provides turnkey solutions of NFT SDK to Web3 builders so they can quickly focus on delivering business value. Vinci SDK will provide the prebuilt contract modules with standardized but customizable interfaces so that Web3 builders can deploy the contracts securely but only in several lines of code with a private key and 100% control.
 
 ## Resources
 
