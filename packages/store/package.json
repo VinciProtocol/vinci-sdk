@@ -1,6 +1,6 @@
 {
   "name": "@vinci-protocol/store",
-  "version": "0.0.2-alpha.3",
+  "version": "1.0.0",
   "description": "@vinci-protocol/store",
   "main": "index.js",
   "files": [
@@ -22,9 +22,9 @@
   },
   "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/store#readme",
   "dependencies": {
-    "@vinci-protocol/math": "0.0.2-alpha.3",
-    "@vinci-protocol/protocol": "0.0.2-alpha.3",
-    "@vinci-protocol/hooks": "0.0.2-alpha.3"
+    "@vinci-protocol/math": "1.0.0",
+    "@vinci-protocol/protocol": "1.0.0",
+    "@vinci-protocol/hooks": "1.0.0"
   },
   "peerDependencies": {
     "@reduxjs/toolkit": "^1.9.0",
