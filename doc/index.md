@@ -4,11 +4,11 @@
 
 ## Packages
 
-| Package                                   | Description |
-| ----------------------------------------- | ----------- |
-| [@vinci-protocol/api](./api.md)           |             |
-| [@vinci-protocol/domains](./domains.md)   |             |
-| [@vinci-protocol/hooks](./hooks.md)       |             |
-| [@vinci-protocol/math](./math.md)         |             |
-| [@vinci-protocol/protocol](./protocol.md) |             |
-| [@vinci-protocol/store](./store.md)       |             |
+| Package                                   | Description      |
+| ----------------------------------------- | ---------------- |
+| [@vinci-protocol/api](./api.md)           | Vinci API SDK    |
+| [@vinci-protocol/domains](./domains.md)   | React SDK        |
+| [@vinci-protocol/hooks](./hooks.md)       | React Hooks      |
+| [@vinci-protocol/math](./math.md)         | Math Library     |
+| [@vinci-protocol/protocol](./protocol.md) | Protocol Library |
+| [@vinci-protocol/store](./store.md)       | Redux Libary     |
