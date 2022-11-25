@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { createContext } from '../utils/createContext'
+import { createContext } from 'packages/domains/src/utils/createContext'
 import {
   ERC20Service,
   ERC721Service,
@@ -8,13 +8,10 @@ import {
   WalletBalanceContract,
   VinciNFTContract,
 } from '@vinci-protocol/protocol'
-import type { MarketData } from '../types'
+import { useConfig } from '../config'
 
-export type ContractServiceProps = {
-  provider: any
-  market: MarketData
-}
-const useContractService = ({ provider, market }: ContractServiceProps) => {
+const useContractService = () => {
+  const { provider, market } = useConfig()
   const contracts = useMemo(() => {
     const { WETH_GATEWAY, WPUNKS_GATEWAY, uiPoolDataProvider, walletBalanceProvider, vinciNFTProvider } =
       market.addresses

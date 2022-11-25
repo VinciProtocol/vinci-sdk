@@ -1,20 +1,21 @@
-import type { ContractServiceProps } from './contract'
+import type { ConfigServiceProps } from './config'
+import ConfigProvider from './config'
 import ContractProvider from './contract'
 // import ContractDataProvider from './contractData'
 // import ControllersProvider from './controllers'
 
 import type { FCC } from './types'
 
-export type VinciSDKProviderProps = {
-  contractProps: ContractServiceProps
-}
-export const VinciSDKProvider: FCC<VinciSDKProviderProps> = ({ children, contractProps }) => {
+export type VinciSDKProviderProps = ConfigServiceProps
+export const VinciSDKProvider: FCC<VinciSDKProviderProps> = ({ children, ...configProps }) => {
   return (
-    <ContractProvider props={contractProps}>
-      {children}
-      {/* <ContractDataProvider>
+    <ConfigProvider props={configProps}>
+      <ContractProvider>
+        {children}
+        {/* <ContractDataProvider>
         <ControllersProvider>{children}</ControllersProvider>
       </ContractDataProvider> */}
-    </ContractProvider>
+      </ContractProvider>
+    </ConfigProvider>
   )
 }
