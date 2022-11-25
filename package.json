@@ -11,6 +11,7 @@
     "build": "node scripts/build.js",
     "lint": "eslint --cache --ext .ts packages/*/src/**.ts",
     "format": "prettier --write --cache --parser typescript \"packages/**/*.ts?(x)\"",
+    "format-doc": "prettier --write --cache --parser markdown \"doc/**.md\"",
     "format-check": "prettier --check --cache --parser typescript \"packages/**/*.ts?(x)\"",
     "create-api-doc": "api-documenter markdown --input-folder ./temp --output-folder ./temp/markdown",
     "release": "node scripts/release.js",
