@@ -1,6 +1,6 @@
 {
   "name": "@vinci-protocol/protocol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@vinci-protocol/protocol",
   "main": "index.js",
   "files": [
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/VinciProtocol/vinci-sdk/tree/master/packages/protocol#readme",
   "dependencies": {
-    "@vinci-protocol/math": "1.0.0"
+    "@vinci-protocol/math": "1.0.1"
   }
 }
